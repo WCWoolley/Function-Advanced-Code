@@ -67,7 +67,7 @@ describe("Title of testing arguments",function() {
             ting: "tang",
             tung: "tong"
         };
-        expect(convertArrayToAnObject(["ting","tang","tung","tong"])).toBe(obj);
+        expect(convertArrayToAnObject(["ting","tang","tung","tong"])).toEqual(obj);
 
     });
 
