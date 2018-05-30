@@ -85,10 +85,14 @@ function allElementsExceptFirstThree (arr) {
 // 11. Write a function called 'convertArrayToAnObject' that turns an array (with an even number of elements) into a hash, by
 // pairing up elements. e.g. ['a', 'b', 'c', 'd'] becomes
 // {'a' => 'b', 'c' => 'd'}
-function convertArrayToAnObject (arr) {
-  
-}
 
+function convertArrayToAnObject (arr) {
+  var obj1 = {}
+  for (var i = 0; i < arr.length; i++) {
+    obj1.window[`${arr[i]}`] = `${arr[i+1]}`;
+  }
+  return obj1;
+}
 // 12. Write a function called 'fizzBuzz' that takes any number and returns a value based on these rules
 function fizzBuzz (num) {
   if (num % 3 === 0 && num % 5 === 0) {
